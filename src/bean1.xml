@@ -17,4 +17,12 @@
         <property name="bauthor" value="达摩老祖">
         </property>
     </bean>
+
+    <!--3 有参数构造注入属性-->
+    <bean id="orders" class="com.duke.spring5.Orders">
+        <constructor-arg name="oname" value="电脑">
+        </constructor-arg>
+        <constructor-arg name="address" value="China">
+        </constructor-arg>
+    </bean>
 </beans>
